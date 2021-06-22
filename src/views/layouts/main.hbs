@@ -28,5 +28,19 @@
     
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+{{!-- JS bot AWS --}}
+<script src="/dist/lex-web-ui-loader.js"></script>
+    <script>
+        var loaderOpts = {
+            baseUrl: "https://d3cxu7rig69db7.cloudfront.net",
+            shouldLoadMinDeps: true
+        };
+        var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+        loader.load()
+            .catch(function (error) {
+                console.error
+            })
+    </script>
+{{!--  --}}
 </body>
 </html>
